@@ -9,7 +9,7 @@ with open('./data/players.json', 'r') as f:
 players_sorted = sorted(players, key=lambda player: player['elo_points'])
 
 players_g1 = players_sorted[0:len(players_sorted)//2]
-players_g2 = players_sorted[3:-1]
+players_g2 = players_sorted[3:len(players_sorted)]
 
 versus = []
 
